@@ -80,16 +80,16 @@ $ cd ../LabsEV/data/parquet
 ## Pre-requisitos
 
 - Python 3.6+
+- Pandas
 - SQLite3
 
-Este projeto possui dependências com algumas-> bibliotecas.
+Este projeto possui dependências com algumas bibliotecas.
 
-Para saber quais as bibliotecas que são usad->as, basta abrir o arquivo:
-"**_requirements.txt_**".
+Para saber quais as bibliotecas que são usadas, basta abrir o arquivo: "**_requirements.txt_**".
 
-Neste arquivo é possível encontrar a lista d->as bibliotecas usadas neste projeto e a sua versão.
+Neste arquivo é possível encontrar a lista das bibliotecas usadas neste projeto e a sua versão.
 
-Antes de executar este projeto, é recomendad->o a instalação destas bibliotecas.
+Antes de executar este projeto, é recomendado a instalação destas bibliotecas.
 
 Para instalar estas bibliotecas, basta usar o seguinte comando:
 
@@ -100,9 +100,9 @@ $ pip install -r requirements.txt
 ## Estrutura de pastas do projeto
 
 ```
-|__ ..LabsEV/data/        => database sqlite
-|__ ..LabsEV/data/parquet => arquivos parquet.gzip/(solução da etapa 2)
-|__ ..LabsEV/img          => diagrama de entidade e relacionamento
-|__ ..LabsEV/logs         => arquivos de log
-|__ ..LabsEV/sql          => queries dos relatórios/(solução da etapa 1)
+|__ ..LabsEV/data/          =>  database sqlite (.db)
+|__ ..LabsEV/data/parquet   =>  arquivos parquet.gzip/(solução da etapa 2)
+|__ ..LabsEV/img            =>  diagrama de entidade e relacionamento
+|__ ..LabsEV/logs           =>  arquivos de log
+|__ ..LabsEV/sql            =>  queries dos relatórios/(solução da etapa 1)
 ```
