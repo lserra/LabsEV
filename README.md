@@ -79,16 +79,16 @@ $ cd ../LabsEV/data/parquet
 
 ## Pre-requisitos
 
-- Python 3.6+->
-- SQLite3->
-->
+- Python 3.6+
+- SQLite3
+
 Este projeto possui dependências com algumas-> bibliotecas.
-->
+
 Para saber quais as bibliotecas que são usad->as, basta abrir o arquivo:
-"**_requirements.txt_**".->
-->
+"**_requirements.txt_**".
+
 Neste arquivo é possível encontrar a lista d->as bibliotecas usadas neste projeto e a sua versão.
-->
+
 Antes de executar este projeto, é recomendad->o a instalação destas bibliotecas.
 
 Para instalar estas bibliotecas, basta usar o seguinte comando:
