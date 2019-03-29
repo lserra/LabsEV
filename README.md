@@ -31,7 +31,7 @@ O desafio está dividido em duas etapas:
 Nesta etapa aprresentamos uma base de dados do histórico de corridas de Fórmula 1.
 A mesma encontra-se no arquivo `formula-1.tar.xz`, no formato do banco relacional SQLite3.
 
-![DER](/home/lserra/PycharmProjects/LabsEV/img/schema-formula-1.png)
+![DER](https://github.com/lserra/LabsEV/blob/master/img/schema-formula-1.png?raw=true)
 
 > Modelagem do banco de dados referente à Fórmula 1
 
