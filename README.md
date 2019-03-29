@@ -101,8 +101,8 @@ $ pip install -r requirements.txt
 
 ```
 |__ ..LabsEV/data/        => database sqlite
-|__ ..LabsEV/data/parquet => arquivos parquet.gzip
+|__ ..LabsEV/data/parquet => arquivos parquet.gzip/(solução da etapa 2)
 |__ ..LabsEV/img          => diagrama de entidade e relacionamento
 |__ ..LabsEV/logs         => arquivos de log
-|__ ..LabsEV/sql          => queries do exercício 1 (relatórios)
+|__ ..LabsEV/sql          => queries dos relatórios/(solução da etapa 1)
 ```
