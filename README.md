@@ -65,7 +65,7 @@ o carregamento deve gerar um arquivo no formato Parquet para cada tabela.
 
 Na solução deste exercício, foi usada a biblioteca Pandas.
 
-Para gerar os arquivos no formato "parquet.gzip", é preciso executar o seguinte comando:
+Para gerar os arquivos no formato `parquet.gzip`, é preciso executar o seguinte comando:
 
 ```shell
 $ python sqlite_to_parquet.py
