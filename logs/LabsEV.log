@@ -1,0 +1,6 @@
+2019-03-28 23:50:34,873 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Creating the database connection . . .
+2019-03-28 23:50:34,874 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Opening a new connection to the database.
+2019-03-28 23:50:34,874 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Selecting all tables from database . . .
+2019-03-28 23:50:34,874 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Exporting all data to parquet file . . .
+2019-03-28 23:50:38,328 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Closing the database connection . . .
+2019-03-28 23:50:38,329 - sqlite_to_parquet - /home/lserra/PycharmProjects/LabsEV/sqlite_to_parquet.py - INFO - Process finish successfully!

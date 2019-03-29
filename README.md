@@ -1,29 +1,35 @@
 # Desafio para Big Data
 
-**Recomendações:**
+Diferentemente de outros desafios já realizados, este desafio foi muito divertido!
 
-Não faça fork deste repositório
+Eu já fui um grande apaixonado pela Formula 1.
+E reviver esta paixão, mas de uma outra perspectiva, foi uma experiência muito
+legal!
 
-Envie o link do seu repositório, para que possamos avaliar seu código, práticas
-utilizadas, testes, padrões utilizados, frameworks e bibliotecas.
+Eu me senti como uma criança quando acaba de ganhar um brinquedo novo.
+Cheio de ideias mirabolantes.
 
-Faça uso de práticas como: Linguagem Ubíqua, KISS, DRY e outras.
+- Criar um painel ou dashboard para apresentar todos estes dados;
+- Criar novos relatórios e novas análises;
+- Criar alertas;
+- Criar um modelo preditivo para a próxima temporada, etc.
 
-A qualidade do produto entregue e seus detalhes de apresentação contarão para
-sua avaliação. Fique à vontade para adicionar mais funcionalidades ao que fora
-proposto, mas não esqueça de garantir qualidade na sua solução como um todo.
+Mas, sendo o tempo um recurso que não estava a meu favor, eu resolvi ser prático
+e objetivo. E focar naquilo que estava sendo solicitado neste desafio.
+
+Pois com certeza, só isso já seria bastante trabalho. Então, mãos a obra!
 
 ## Proposta
 
-Este desafio será dividido em duas etapas. São elas:
+O desafio está dividido em duas etapas:
 
   1. Realização de relatório via consultas SQL
   2. Extração e carregamento de dados no formato Parquet via Python
 
 ## Etapa 1
 
-Nesta etapa aprresentamos uma base de dados do histórico de corridas de Fórmula 1. A mesma encontra-se no arquivo `formula-1.tar.xz`, no formato
-do banco relacional SQLite3.
+Nesta etapa aprresentamos uma base de dados do histórico de corridas de Fórmula 1.
+A mesma encontra-se no arquivo `formula-1.tar.xz`, no formato do banco relacional SQLite3.
 
 ![DER](/home/lserra/PycharmProjects/LabsEV/img/schema-formula-1.png)
 
@@ -39,21 +45,64 @@ O objetivo é responder, através de queries na linguagem SQL, os relatórios ab
       - O piloto não pode ter subido no pódio em sua carreira da Fórmula 1 para entrar nesse grupo
   6. Pontuação mediana por temporada dos 20 melhores pilotos das últimas 10 temporadas
 
+## Solução da Etapa 1
+
+As queries podem ser encontradas no seguinte caminho do projeto:
+
+```shell
+$ cd ../LabsEV/sql
+```
+
 ## Etapa 2
 
-A proposta é realizar um processo de extração e carregamento de dados, utilizando a linguagem de programação Python e suas bibliotecas disponíveis - listamos algumas delas abaixo.
+A proposta é realizar um processo de extração e carregamento de dados, utilizando
+a linguagem de programação Python e suas bibliotecas disponíveis.
 
-A extração será feita sob a base de dados do histórico de corridas de Fórmula 1 e o carregamento deve gerar um arquivo no formato Parquet para cada tabela.
+A extração será feita sob a base de dados do histórico de corridas de Fórmula 1 e
+o carregamento deve gerar um arquivo no formato Parquet para cada tabela.
 
-## Downloads
+## Solução da Etapa 2
 
-[Base de dados Formula 1 - SQLite3](https://raw.githubusercontent.com/estantevirtual/vagas/master/desafios/assets/formula-1.tar.xz)
-    - clicar no link com o botão direito e em `Salvar link como...`
+Na solução deste exercício, foi usada a biblioteca Pandas.
 
-## Referências
+Para gerar os arquivos no formato "parquet.gzip", é preciso executar o seguinte comando:
 
-- [Pandas](https://pandas.pydata.org/)
-- [PySpark](https://spark.apache.org/docs/latest/quick-start.html)
-- [Docker com Jupyter](https://hub.docker.com/r/jupyter/)
-- [Docker com Jupyter/PySpark](https://hub.docker.com/r/jupyter/pyspark-notebook/)
-- [Formula 1 Race Data](https://www.kaggle.com/cjgdev/formula-1-race-data-19502017)
+```shell
+$ python sqlite_to_parquet.py
+```
+
+Os arquivos parquet podem ser encontrados, no seguinte caminho do projeto:
+
+```shell
+$ cd ../LabsEV/data/parquet
+```
+
+## Pre-requisitos
+
+- Python 3.6+->
+- SQLite3->
+->
+Este projeto possui dependências com algumas-> bibliotecas.
+->
+Para saber quais as bibliotecas que são usad->as, basta abrir o arquivo:
+"**_requirements.txt_**".->
+->
+Neste arquivo é possível encontrar a lista d->as bibliotecas usadas neste projeto e a sua versão.
+->
+Antes de executar este projeto, é recomendad->o a instalação destas bibliotecas.
+
+Para instalar estas bibliotecas, basta usar o seguinte comando:
+
+```shell
+$ pip install -r requirements.txt
+```
+
+## Estrutura de pastas do projeto
+
+```
+|__ ..LabsEV/data/        => database sqlite
+|__ ..LabsEV/data/parquet => arquivos parquet.gzip
+|__ ..LabsEV/img          => diagrama de entidade e relacionamento
+|__ ..LabsEV/logs         => arquivos de log
+|__ ..LabsEV/sql          => queries do exercício 1 (relatórios)
+```
